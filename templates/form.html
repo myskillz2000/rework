@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="POST" action="">
+    {{ form.csrf_token }}
+    {{ form.carrier.label }} {{ form.carrier(size=20) }}
+    <input type="submit" value="Submit">
+</form>
+
+{% endblock%}
