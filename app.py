@@ -1,7 +1,5 @@
-from email.policy import default
-from django.forms import Select
 from flask import Flask, render_template, redirect
-from graphviz import render
+from flask import request
 from flask_wtf import FlaskForm, Form
 from jsonschema import Validator
 from wtforms import DateField, TimeField, IntegerField, SelectField, StringField, FormField, HiddenField
